@@ -80,9 +80,14 @@
       <Name>System.XML</Name>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Xpand.ExpressApp.MasterDetail, Version=17.2.7.4, Culture=neutral, PublicKeyToken=c52ffed5d5ff0958, processorArchitecture=MSIL" />
+    <Reference Include="Xpand.ExpressApp.MasterDetail, Version=17.2.7.4, Culture=neutral, PublicKeyToken=c52ffed5d5ff0958, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\Developer.cs" />
+    <Compile Include="BusinessObjects\Issue.cs" />
+    <Compile Include="BusinessObjects\Project.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -98,6 +103,7 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseUpdate\ReadMe.txt" />

@@ -1,5 +1,38 @@
 ﻿<?xml version="1.0" ?>
 <Application Title="MasterDetailTest">
+  <BOModel>
+    <Class Name="MasterDetailTest.Module.BusinessObjects.Developer">
+      <OwnMembers>
+        <Member Name="Name" Caption="Developer Name" />
+      </OwnMembers>
+    </Class>
+    <Class Name="MasterDetailTest.Module.BusinessObjects.Issue" Caption="Issue">
+      <OwnMembers>
+        <Member Name="Developer" Caption="Developer Name" />
+        <Member Name="Name" Caption="Issue Name" />
+        <Member Name="Project" Caption="Project Name" />
+      </OwnMembers>
+    </Class>
+    <Class Name="MasterDetailTest.Module.BusinessObjects.Project">
+      <OwnMembers>
+        <Member Name="Issues" Caption="Issues List" />
+        <Member Name="Name" Caption="Project Name" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
   <Views>
+    <ListView Id="Issue_ListView">
+      <Columns>
+        <ColumnInfo Id="Project" Index="0" />
+        <ColumnInfo Id="Name" Index="1" />
+        <ColumnInfo Id="Oid" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Project_Issues_ListView">
+      <Columns>
+        <ColumnInfo Id="Oid" Removed="True" />
+        <ColumnInfo Id="Project" Removed="True" />
+      </Columns>
+    </ListView>
   </Views>
 </Application>
