@@ -1,6 +1,18 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
+  <SchemaModules>
+    <SchemaModule Name="LogicModule" Version="17.2.7.4" IsNewNode="True" />
+    <SchemaModule Name="MasterDetailModule" Version="17.2.7.4" IsNewNode="True" />
+    <SchemaModule Name="MasterDetailWindowsModule" Version="17.2.7.4" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="17.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="17.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="XpandSecurityModule" Version="17.2.7.4" IsNewNode="True" />
+    <SchemaModule Name="XpandSystemModule" Version="17.2.7.4" IsNewNode="True" />
+    <SchemaModule Name="XpandSystemWindowsFormsModule" Version="17.2.7.4" IsNewNode="True" />
+  </SchemaModules>
   <Views>
+    <ListView Id="Issue_ListView" EditorTypeName="Xpand.ExpressApp.Win.ListEditors.GridListEditors.GridView.XpandGridListEditor" />
+    <ListView Id="Project_Issues_ListView" EditorTypeName="Xpand.ExpressApp.Win.ListEditors.GridListEditors.GridView.XpandGridListEditor" />
     <ListView Id="Project_ListView" EditorTypeName="Xpand.ExpressApp.Win.ListEditors.GridListEditors.GridView.XpandGridListEditor">
       <GridViewOptions>
         <OptionsDetail EnableMasterViewMode="True" />
